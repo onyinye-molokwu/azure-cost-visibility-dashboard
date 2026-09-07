@@ -1,0 +1,4 @@
+resources
+| where resourceGroup =~ "rg-cost-dashboard-onyinye"
+| project name, type, location
+| order by type asc
