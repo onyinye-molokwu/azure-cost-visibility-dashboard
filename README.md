@@ -47,3 +47,38 @@ This project addresses that problem by providing:
 - **Azure Subscription Budget** — Monthly budget of **$200** with alert thresholds at **$50, $100, and $200**
 - **Azure Logic App** — Receives the Action Group trigger and sends Gmail notifications
 - **Subscription Diagnostic Setting** — Sends Administrative, Security, and Policy activity logs to Log Analytics
+
+## Implementation & Validation
+
+The solution was deployed and validated in Azure. The following screenshots demonstrate the deployed infrastructure, notification workflow, and Workbook resource visibility.
+
+### Terraform Deployment
+
+Terraform state confirms the Azure resources are managed through Infrastructure as Code.
+
+![Terraform State](docs/screenshots/terraform-state.png)
+
+### Azure Resources
+
+The project resources were deployed within the Azure resource group.
+
+![Azure Resource Group](docs/screenshots/azure-resource-group.png)
+
+### Alerting and Automation
+
+The Azure Monitor Action Group provides two notification paths: direct email notification and the Logic App workflow.
+
+![Azure Monitor Action Group](docs/screenshots/action-group.png)
+
+### Notification Test
+
+The Action Group test successfully generated notifications, validating both the direct email path and the Logic App-to-Gmail workflow.
+
+![Cost Alert Email Notifications](docs/screenshots/cost-alert-emails.png)
+
+### Cost Visibility Workbook
+
+The Azure Workbook uses Azure Resource Graph to provide visibility into resources associated with the project.
+
+![Azure Cost Visibility Workbook](docs/screenshots/azure-workbook.png)
+
