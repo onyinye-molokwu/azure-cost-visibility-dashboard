@@ -25,7 +25,6 @@ This project addresses that problem by providing:
 ![Azure Cost Visibility Dashboard Architecture](docs/screenshots/azure-cost-architecture.png)
 
 ## Technologies Used
-## Technologies Used
 
 - **Microsoft Azure** — Cloud platform used to host the solution
 - **Terraform** — Infrastructure as Code for provisioning Azure resources
@@ -42,3 +41,9 @@ This project addresses that problem by providing:
 - **WSL / Ubuntu** — Local Linux development environment
 
 ## Resources Deployed
+- **Azure Resource Group** — `rg-cost-dashboard-onyinye`
+- **Log Analytics Workspace** — Centralized subscription activity logs
+- **Azure Monitor Action Group** — Routes cost-budget notifications
+- **Azure Subscription Budget** — Monthly budget of **$200** with alert thresholds at **$50, $100, and $200**
+- **Azure Logic App** — Receives the Action Group trigger and sends Gmail notifications
+- **Subscription Diagnostic Setting** — Sends Administrative, Security, and Policy activity logs to Log Analytics
