@@ -21,7 +21,6 @@ This project addresses that problem by providing:
 - Terraform-based infrastructure deployment
 
 ## Architecture
-## Architecture
 
 ![Azure Cost Visibility Dashboard Architecture](docs/screenshots/azure-cost-architecture.png)
 
