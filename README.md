@@ -25,3 +25,20 @@ This project addresses that problem by providing:
 ![Azure Cost Visibility Dashboard Architecture](docs/screenshots/azure-cost-architecture.png)
 
 ## Technologies Used
+## Technologies Used
+
+- **Microsoft Azure** — Cloud platform used to host the solution
+- **Terraform** — Infrastructure as Code for provisioning Azure resources
+- **Azure CLI** — Azure authentication and command-line management
+- **Azure Cost Management** — Subscription budget and cost governance
+- **Azure Monitor** — Monitoring and notification integration
+- **Azure Monitor Action Groups** — Budget alert notification routing
+- **Azure Logic Apps** — Automated notification workflow
+- **Gmail Connector** — Email delivery from the Logic App
+- **Log Analytics Workspace** — Centralized subscription activity logs
+- **Azure Workbooks** — Dashboard and resource visualization
+- **Azure Resource Graph** — Resource inventory and metadata queries
+- **Git & GitHub** — Version control and project documentation
+- **WSL / Ubuntu** — Local Linux development environment
+
+## Resources Deployed
